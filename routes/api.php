@@ -1,6 +1,7 @@
 <?php
 
 use AdevPmftc\NovaArtisanCards\DatabaseBackup\DatabaseBackupController;
+use AdevPmftc\NovaArtisanCards\DatabaseSeed\DatabaseSeedController;
 use AdevPmftc\NovaArtisanCards\HorizonClear\HorizonClearController;
 use AdevPmftc\NovaArtisanCards\MaintenanceMode\MaintenanceModeController;
 use AdevPmftc\NovaArtisanCards\MigrateFresh\MigrateFreshController;
@@ -26,3 +27,5 @@ Route::post('/artisan/up', [MaintenanceModeController::class, 'up']);
 Route::post('/artisan/database-backup', DatabaseBackupController::class);
 
 Route::post('/artisan/horizon-clear', [HorizonClearController::class, 'clear']);
+
+Route::post('/artisan/database-seed', [DatabaseSeedController::class, 'seed']);

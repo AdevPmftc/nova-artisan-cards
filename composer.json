@@ -1,0 +1,30 @@
+{
+    "name": "adevpmftc/nova-artisan-cards",
+    "description": "A Laravel Nova card.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "spatie/laravel-backup": "^8.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "AdevPmftc\\NovaArtisanCards\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AdevPmftc\\NovaArtisanCards\\CardServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
